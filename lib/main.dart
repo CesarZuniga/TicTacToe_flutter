@@ -37,7 +37,7 @@ class _TicTacToeState extends State<TicTacToe> {
   }
   void handleButtonPressed(int row, int col) {
     setState(() {
-      if (boardState[row][col].isEmpty) {
+      if (boardState[row][col].isEmpty && winner.isEmpty){
         turn = turn == 'X' ? 'O' : 'X';
         boardState[row][col] = turn;
         winner = checkWinner(boardState);
