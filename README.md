@@ -7,8 +7,7 @@ Esta app es un ejemplo sencillo de un tic tac toe
 1. flutter pub get
 2. flutter run 
 ## Pantallas
-![alt text]()
-![alt text]
+![alt text](https://github.com/CesarZuniga/TicTacToe_flutter/blob/main/assets/images/demo.png)
 ### Nota:
 Tener preparado el ambiente para desarrollo con flutter 
 ([Instalar flutter](https://docs.flutter.dev/get-started/install))
