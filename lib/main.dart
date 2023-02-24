@@ -44,8 +44,10 @@ class _TicTacToeState extends State<TicTacToe> {
         if (winner.isNotEmpty) {
           if(winner.contains('draw')){
             _showMyDialog('Lo sentimos!!', 'Sigan intentando esta partida a quedado igualada 😜');
+            restar();
           }else{
             _showMyDialog('Felicidades!!','$winner tu has ganado esta partida 😊');
+            restar();
           }          
         }
       }
@@ -66,7 +68,7 @@ class _TicTacToeState extends State<TicTacToe> {
         return TextButton(
             style: ButtonStyle(
                 shape: MaterialStateProperty.all(const RoundedRectangleBorder(
-                    side: BorderSide(width: 0.1, color: Colors.blue)))),
+                    side: BorderSide(width: 0.5, color: Colors.blue)))),
             onPressed: () => {handleButtonPressed(row, col)},
             child: Text(
               boardState[row][col],
